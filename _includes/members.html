@@ -1,0 +1,16 @@
+<ul>
+    {% for member in site.data.members %}
+    <li style="display: flex;margin-bottom: 12px;border: 1px solid #D1D1D1;">
+        <div class="image" style="margin-right: 6px;padding: 6px;display: block;">
+            <img src="{{member.image}}" style="width: 120px;height: 120px;"/>
+        </div>
+        <div class="info" style="display: flex;flex-direction: column;justify-content: center;font-weight: bold;">
+            <div>{{member.name}}</div>
+            <div>{{member.gender}}</div>
+            <div>{{member.title}}</div>
+        </div>
+    </li>
+    {% endfor %}
+</ul>
+
+<div class="source" style="float: right;">数据来源：企查查</div>

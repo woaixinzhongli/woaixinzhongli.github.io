@@ -1,0 +1,87 @@
+---
+layout: home
+---
+
+<div class="main-content-wrapper" style="display: flex;width: 100%;padding-right: 40px;">
+    <div class="left-pannel" style="width: 300px;margin-right: 20px;margin-top: 20px;">
+        {% include members.html %}
+    </div>
+    <div class="main-content" style="width: calc(100% - 300px);">
+        <div style="height: 90px;width: 100%; display: flex;align-items: center;font-size: 48px;flex-wrap: nowrap;">
+            <div>
+                <svg class="icon"
+                    style="width: 1em; height: 1em;vertical-align: middle;fill: currentColor;overflow: hidden;"
+                    viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1389">
+                    <path
+                        d="M884.875894 423.143253 646.970506 423.143253c92.185562-340.464205-63.516616-357.853247-63.516616-357.853247-65.993017 0-52.312436 52.182476-57.3031 60.881602 0 166.502152-176.849824 296.971645-176.849824 296.971645l0 472.171899c0 46.607504 63.516616 63.393819 88.433098 63.393819l357.452111 0c33.641191 0 61.036122-88.224344 61.036122-88.224344 88.434122-300.70569 88.434122-390.177444 88.434122-390.177444C944.657442 418.179195 884.875894 423.143253 884.875894 423.143253L884.875894 423.143253 884.875894 423.143253zM884.875894 423.143253M251.671415 423.299819 109.214912 423.299819c-29.420053 0-29.873378 28.89612-29.873378 28.89612l29.420053 476.202703c0 30.309306 30.361495 30.309306 30.361495 30.309306L262.420223 958.707948c25.686009 0 25.458835-20.049638 25.458835-20.049638L287.879058 459.411271C287.879058 422.837284 251.671415 423.299819 251.671415 423.299819L251.671415 423.299819 251.671415 423.299819zM251.671415 423.299819"
+                        p-id="1390"></path>
+                </svg>
+                0
+            </div>
+            <div style="flex-grow: 1; text-align: center;">
+                我
+            <svg class="icon" style="width: 1em; height: 1em;vertical-align: middle;fill: currentColor;overflow: hidden;"
+                viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1814">
+                <path
+                    d="M753.266187 77.352518A270.218129 270.218129 0 0 0 512 230.510504 270.218129 270.218129 0 0 0 270.733813 77.352518C121.480288 77.352518 0 203.105612 0 357.663309c0 240.750504 257.841727 460.431655 498.444892 585.669065a29.467626 29.467626 0 0 0 27.110216 0c240.971511-125.23741 498.444892-344.918561 498.444892-585.669065 0-154.557698-121.480288-280.310791-270.733813-280.310791z"
+                    fill="#333333" p-id="1815"></path>
+            </svg>
+            信中利
+            </div>
+            <div>
+                568563
+                <svg class="icon"
+                    style="width: 1em; height: 1em;vertical-align: middle;fill: currentColor;overflow: hidden;"
+                    viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="3083">
+                    <path
+                        d="M322.4 107.2v529.4c67.7 24.7 120.3 96 139.7 203.4 8.1 45.7 48.6 76.9 95.3 76.9 52.7 0 95.3-43.7 95.3-97.7V668.6h184.5c66.9 0 115.5-64.5 97.3-131l-91.4-338.9c-14.1-54-62.8-91.5-117.5-91.5H322.4z m-51.2 0H166.1c-44.6 0-81.1 37.5-81.1 83.2v351.4c0 45.7 36.5 85.2 81.1 85.2H271.2V107.2z"
+                        p-id="3084"></path>
+                </svg>
+            </div>
+        </div>
+        <div style="height: 500px;width: 100%;display: flex;flex-wrap: nowrap;margin-bottom: 16px;">
+            <div style="width: 50%; margin-right: 10px;border: 1px solid #D1D1D1;padding: 6px;">
+                <div class="category-header" style="display: flex;border-bottom: 1px solid #D1D1D1;">
+                    <div>新闻</div>
+                    <div style="flex-grow: 1;"></div>
+                    <a href="/news">更多</a>
+                </div>
+                {% for post in site.categories.news limit:4 %}
+                <div class="post-preview">
+                    <a href="{{ post.url | prepend: site.baseurl }}">
+                        <h2 class="post-title" style="overflow: hidden;text-overflow: ellipsis;white-space: nowrap;">
+                            {{ post.title }}
+                        </h2>
+                        <h3 class="post-subtitle">
+                            {{ post.source }}
+                        </h3>
+                    </a>
+                </div>
+                <hr>
+                {% endfor %}
+            </div>
+            <div style="width: 50%; margin-left: 10px;border: 1px solid #D1D1D1;padding: 6px;">
+                <div class="category-header" style="display: flex;border-bottom: 1px solid #D1D1D1;">
+                    <div>涉诉</div>
+                    <div style="flex-grow: 1;"></div>
+                    <a href="/complaint">更多</a>
+                </div>
+                {% for post in site.categories.complaint limit:4 %}
+                <div class="post-preview">
+                    <a href="{{ post.url | prepend: site.baseurl }}">
+                        <h2 class="post-title" style="overflow: hidden;text-overflow: ellipsis;white-space: nowrap;">
+                            {{ post.title }}
+                        </h2>
+                        <h3 class="post-subtitle">
+                            {{ post.source }}
+                        </h3>
+                    </a>
+                </div>
+                <hr>
+                {% endfor %}
+            </div>
+        </div>
+        <iframe src="https://guba.eastmoney.com/list,833858.html" frameborder="0"
+            style="width: 100%;height:3700px;overflow: visible;"></iframe>
+    </div>
+</div>

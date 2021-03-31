@@ -1,0 +1,21 @@
+---
+layout: default
+category: complaint
+---
+
+<div style="width: 1200px;margin: 0 auto;">
+    {% for post in site.categories.complaint %}
+    <div class="post-preview">
+        <a href="{{ post.url | prepend: site.baseurl }}">
+            <h2 class="post-title" style="overflow: hidden;text-overflow: ellipsis;white-space: nowrap;">
+                {{ post.title }}
+            </h2>
+            <h3 class="post-subtitle">
+                {{ post.source }}
+            </h3>
+        </a>
+    </div>
+    <hr>
+    {% endfor %}
+
+</div>
