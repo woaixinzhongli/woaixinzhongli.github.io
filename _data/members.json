@@ -16,5 +16,47 @@
     "gender": "男",
     "title": "执行董事",
     "image": "https://imgh.tianyancha.com/logo/human/e87a6d8457ccfbf1c2b3d46a690228fc_d200x200.png"
+  },
+  {
+    "name": "陈丹",
+    "gender":"女",
+    "title": "董事,总经理",
+    "image": "https://co-image.qichacha.com/PersonImage/pc37a3c550ac765c42e998d7460a2694.jpg"
+  },
+  {
+    "name": "沈晓超",
+    "gender": "女",
+    "title": "董事,副总经理,财务总监",
+    "image": "https://co-image.qichacha.com/PersonImage/p12949eb117c846b4ceaf0646ba4fb5f.jpg"
+  },
+  {
+    "name": "徐海啸",
+    "gender": "男",
+    "title": "董事",
+    "image": "https://co-image.qichacha.com/PersonImage/pa1a569c95e2e2ac1a73f48fbee236bb.jpg"
+  },
+  {
+    "name": "刘小峰",
+    "gender":"男",
+    "title": "董事",
+    "image": "https://co-image.qichacha.com/PersonImage/pc37a3c550ac765c42e998d7460a2694.jpg"
+  },
+  {
+    "name": "魏勤",
+    "gender": "女",
+    "title": "监事会主席",
+    "image": "https://co-image.qichacha.com/PersonImage/p12949eb117c846b4ceaf0646ba4fb5f.jpg"
+  },
+  {
+    "name": "谭清",
+    "gender": "男",
+    "title": "职工监事",
+    "image": "https://co-image.qichacha.com/PersonImage/pa1a569c95e2e2ac1a73f48fbee236bb.jpg"
+  },
+  {
+    "name": "杨宇慧",
+    "gender": "女",
+    "title": "职工监事",
+    "image": "https://co-image.qichacha.com/PersonImage/pa1a569c95e2e2ac1a73f48fbee236bb.jpg"
   }
 ]
