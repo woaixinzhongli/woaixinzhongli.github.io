@@ -66,7 +66,7 @@ layout: home
                     <div style="flex-grow: 1;"></div>
                     <a href="/complaint">更多</a>
                 </div>
-                {% for post in site.categories.complaint limit:4 %}
+                {% for post in site.categories.complaint limit:8 %}
                 <div class="post-preview">
                     <a href="{{ post.url | prepend: site.baseurl }}">
                         <h2 class="post-title" style="overflow: hidden;text-overflow: ellipsis;white-space: nowrap;">
