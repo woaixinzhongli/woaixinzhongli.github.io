@@ -39,14 +39,14 @@ layout: home
                 </svg>
             </div>
         </div>
-        <div style="height: 500px;width: 100%;display: flex;flex-wrap: nowrap;margin-bottom: 16px;">
+        <div style="height: 1000px;width: 100%;display: flex;flex-wrap: nowrap;margin-bottom: 16px;">
             <div style="width: 50%; margin-right: 10px;border: 1px solid #D1D1D1;padding: 6px;">
                 <div class="category-header" style="display: flex;border-bottom: 1px solid #D1D1D1;">
                     <div>新闻</div>
                     <div style="flex-grow: 1;"></div>
                     <a href="/news">更多</a>
                 </div>
-                {% for post in site.categories.news limit:4 %}
+                {% for post in site.categories.news limit:8 %}
                 <div class="post-preview">
                     <a href="{{ post.url | prepend: site.baseurl }}">
                         <h2 class="post-title" style="overflow: hidden;text-overflow: ellipsis;white-space: nowrap;">
