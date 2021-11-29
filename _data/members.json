@@ -30,6 +30,12 @@
     "image": "https://co-image.qichacha.com/PersonImage/p12949eb117c846b4ceaf0646ba4fb5f.jpg"
   },
   {
+    "name": "刘朝晨",
+    "gender": "男",
+    "title": "经理,董事",
+    "image": "https://zhengxin-pub.cdn.bcebos.com/logopic/c40f04cbbe6d67f79e368695b10d2a0c_fullsize.jpg"
+  },
+  {
     "name": "徐海啸",
     "gender": "男",
     "title": "董事",
@@ -51,12 +57,6 @@
     "name": "魏勤",
     "gender": "女",
     "title": "监事会主席",
-    "image": "http://pic.soutu123.cn/element_origin_min_pic/01/37/09/22573c3a831082c.jpg"
-  },
-  {
-    "name": "颜松",
-    "gender": "男",
-    "title": "职工监事",
     "image": "http://pic.soutu123.cn/element_origin_min_pic/01/37/09/22573c3a831082c.jpg"
   },
   {
